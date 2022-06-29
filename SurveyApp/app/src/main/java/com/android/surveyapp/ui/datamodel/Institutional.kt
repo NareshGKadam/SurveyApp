@@ -18,4 +18,5 @@ data class Institutional(
     var I_TotalEmployees: String,
     var I_WaterConnection: String,
     var I_WaterSupplyHours: String
+
 )

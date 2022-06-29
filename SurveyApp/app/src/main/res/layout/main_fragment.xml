@@ -62,14 +62,23 @@
                         android:text="Name of Investigator"
                         android:textColor="@color/dark" />
 
-                    <androidx.appcompat.widget.AppCompatEditText
+                    <!--<androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et1_investigatorname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:background="@drawable/bg_edittext"
                         android:maxLines="1"
+                        android:textSize="16sp" />-->
+                    <Spinner
+                        android:id="@+id/sp_investigatorname"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_edittext"
+                        android:maxLines="1"
                         android:textSize="16sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -159,6 +168,54 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textg34w16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grid No"
+                        android:textColor="@color/dark" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et1_grid_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="1"
+                        android:background="@drawable/bg_edittext" />
+                    <!-- <Spinner
+                         android:id="@+id/tv1_manuf"
+                         android:layout_width="match_parent"
+                         android:layout_height="33dp"
+                         android:layout_marginTop="5dp"
+                         android:background="@drawable/bg_edittext" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

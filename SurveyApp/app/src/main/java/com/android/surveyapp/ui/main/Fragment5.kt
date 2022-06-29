@@ -1,20 +1,24 @@
 package com.android.surveyapp.ui.main
 
+import android.R.attr.bitmap
+import android.app.Activity.RESULT_OK
 import android.app.AlertDialog
 import android.app.ProgressDialog
-import androidx.lifecycle.ViewModelProvider
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
+import android.provider.MediaStore
+import android.util.Base64
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.android.surveyapp.R
 import com.android.surveyapp.SurveyApp.Companion.mPage1_Common
 import com.android.surveyapp.SurveyApp.Companion.mPage2_Section
@@ -28,9 +32,13 @@ import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.ByteArrayOutputStream
+
 
 class Fragment5 : Fragment() {
     lateinit var rootView: View
+    var imageView1: ImageView? =null
+    var imageData=""
     companion object {
         fun newInstance() = Fragment5()
     }
@@ -44,6 +52,9 @@ class Fragment5 : Fragment() {
         rootView = inflater.inflate(R.layout.fragment5, container, false)
 
         val b: Button =rootView.findViewById(R.id.button_next2)
+        val buttonPic: Button =rootView.findViewById(R.id.buttonPic)
+        imageData=""
+         imageView1 =rootView.findViewById(R.id.imageView1)
 
         val et5_capacity: AppCompatEditText =rootView.findViewById(R.id.et5_capacity)
         val et5_connqlty: AppCompatEditText =rootView.findViewById(R.id.et5_connqlty)
@@ -78,6 +89,16 @@ class Fragment5 : Fragment() {
         sp5_connectiontypelegel.adapter = adapter1
         sp5_roplant.adapter = adapter2
         sp5_waterconnection.adapter = adapter2
+
+        buttonPic.setOnClickListener {
+
+            val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            try {
+                startActivityForResult(takePictureIntent, 1)
+            } catch (e: ActivityNotFoundException) {
+                // display error state to the user
+            }
+        }
 
         b.setOnClickListener {
 
@@ -118,7 +139,7 @@ class Fragment5 : Fragment() {
                 ""+mPage3_Resident?.R_AnnualIncome,""+mPage3_Resident?.R_ConnectionNo,""+mPage3_Resident?.R_ContactNo,""+mPage3_Resident?.R_Education,""+mPage3_Resident?.R_Email,""+mPage3_Resident?.R_FamilySize,""+mPage3_Resident?.R_FirstName,""+mPage3_Resident?.R_GISPlotID,""+mPage3_Resident?.R_GISPlotIDSorted,""+mPage3_Resident?.R_GISPropertyID,""+mPage3_Resident?.R_GridNo,""+mPage3_Resident?.R_LastName,""+mPage3_Resident?.R_Location,""+mPage3_Resident?.R_MiddleName,""+mPage3_Resident?.R_Occupation,""+mPage3_Resident?.R_PlotNo,""+mPage3_Resident?.R_PropertyCategory,""+mPage3_Resident?.R_PropertyName,""+mPage3_Resident?.R_PropertyType,""+mPage3_Resident?.R_Remarks,""+mPage3_Resident?.R_Toilet,""+mPage3_Resident?.R_UGDconnection,""+mPage3_Resident?.R_WardName,""+mPage3_Resident?.R_WardNo,""+mPage3_Resident?.R_WaterSource,""+mPage3_Resident?.R_connectsto,
                 ""+mPage2_Section?.q1,""+mPage2_Section?.q10,""+mPage2_Section?.q11,""+mPage2_Section?.q12,""+mPage2_Section?.q13,""+mPage2_Section?.q14,""+mPage2_Section?.q15,""+mPage2_Section?.q16,""+mPage2_Section?.q17,""+mPage2_Section?.q18,""+mPage2_Section?.q19,""+mPage2_Section?.q2,""+mPage2_Section?.q20,""+mPage2_Section?.q21,""+mPage2_Section?.q22,""+mPage2_Section?.q23,""+mPage2_Section?.q24,""+mPage2_Section?.q25,""+mPage2_Section?.q26,""+mPage2_Section?.q27,""+mPage2_Section?.q28,""+mPage2_Section?.q29,"",""+mPage2_Section?.q30,""+mPage2_Section?.q31,""+mPage2_Section?.q32,""+mPage2_Section?.q33,""+mPage2_Section?.q34,""+mPage2_Section?.q35,
                 ""+mPage2_Section?.q35a,""+mPage2_Section?.q36,""+mPage2_Section?.q37,""+mPage2_Section?.q37a,""+mPage2_Section?.q38,""+mPage2_Section?.q3a,""+mPage2_Section?.q3b,""+mPage2_Section?.q3c,""+mPage2_Section?.q3d,""+mPage2_Section?.q4,""+mPage2_Section?.q5,""+mPage2_Section?.q6,""+mPage2_Section?.q7,""+mPage2_Section?.q8,""+mPage2_Section?.q9,
-            )
+            ""+imageData)
             Log.i("jobj--->>", "" + sformAll)
             /*  val jobj: SurveyDataForm = SurveyDataForm(
                   mApartments!!, mCommercial!!,
@@ -238,5 +259,23 @@ class Fragment5 : Fragment() {
 
             }
         })
+    }
+
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == 1 && resultCode == RESULT_OK) {
+            val imageBitmap = data?.extras?.get("data") as Bitmap
+
+            val byteArrayOutputStream = ByteArrayOutputStream()
+            imageBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
+            val byteArray: ByteArray = byteArrayOutputStream.toByteArray()
+
+            val encoded: String = Base64.encodeToString(byteArray, Base64.DEFAULT)
+            imageData="data:image/png;base64,"+encoded
+//            imageData="data:image/png;base64,"+encoded
+            imageView1?.setImageBitmap(imageBitmap)
+
+        }
     }
 }

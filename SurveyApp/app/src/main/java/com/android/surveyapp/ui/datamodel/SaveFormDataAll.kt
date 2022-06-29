@@ -127,5 +127,6 @@ data class SaveFormDataAll(
     var q6: String?,
     var q7: String?,
     var q8: String?,
-    var q9: String?
+    var q9: String?,
+    var s_image:String?
 )

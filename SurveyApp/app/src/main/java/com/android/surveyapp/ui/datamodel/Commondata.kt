@@ -10,5 +10,7 @@ data class Commondata(
     var PlotNo: String?,
     var PropertyType: String?,
     var StartingTime: String?,
-    var WARDNO: String?
+    var WARDNO: String?,
+    var GridNo: String?
+
 )
