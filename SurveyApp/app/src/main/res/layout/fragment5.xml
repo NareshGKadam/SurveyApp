@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Details for Institutional usage"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtrView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Water Supply hours"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_watersupplyhr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/texrrtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Offices: Total Employees"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_officemployee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtVrfiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Source of water Supply"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_sourcesupply"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/texftV22iewf16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hospital: Total beds"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_hospitalbeds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtVffiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Water Connection "
+                                android:textColor="@color/dark" />
+
+                           <!-- <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_waterconnection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp5_waterconnection"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/textVff22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Offices: Total Employees"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_officemployee2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/bg_edittext"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tef5xtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Connection Type"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_conntype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tefxtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hotel: Number of chairs (seating capacity)"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_hotelchairs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xetfView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Connection Quality"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_connqlty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tddextV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="RO plant "
+                                android:textColor="@color/dark" />
+
+                            <!--<androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_roplant"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp5_roplant"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5extView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Total No. of Taps"
+                                android:textColor="@color/dark" />
+
+                            <!--<LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_edittext"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/sp5_taps"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>-->
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_taps"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tedextV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bottled Water "
+                                android:textColor="@color/dark" />
+
+                          <!--  <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_bottledwater"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp5_bottledwater"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Connection Type "
+                                android:textColor="@color/dark" />
+
+                            <!--<androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_conntypelegal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp5_conntypelegal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If yes, Monthly bill amount for Bottled Water"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_monthlybill"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ted5xtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pipe Size"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_pipsz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tesdxtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Storage Facility, Capacity"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_capacity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtVsdiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="School: Student Capacity"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_studcapacity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textdV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Remarks"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_remark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtVfiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hospital: Total beds"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et5_hospitalbeds2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:background="@drawable/bg_edittext"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_back2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Back"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone">
+
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_next2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Submit"
+                    tools:ignore="MissingConstraints"
+                    tools:visibility="visible">
+
+
+                </Button>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

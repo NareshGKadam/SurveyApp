@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView_tisdfwetle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Common Questions"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_stdview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tedsfx56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="29.	Is the quantity of water that you receive (from your main source of water) adequate?"
+                                android:textColor="@color/dark" />
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_29"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_sertatusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/te56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="30.	Is water available (from your main source) throughout the year?"
+                                android:textColor="@color/dark" />
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_30"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/twerweex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="31.	Which months do you face scarcity? Multiple response"
+                                android:textColor="@color/dark" />
+
+                            <RadioGroup
+                                android:id="@+id/rg3_31"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="January" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="February" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="March " />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="April " />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="May " />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="June" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="July" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="August " />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="September" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="October" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_11"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="November" />
+
+                                    <CheckBox
+                                        android:id="@+id/rb31_12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:text="December" />
+                                </LinearLayout>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_stadfsview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/texdf56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="32.	Generally, how does the water smell? "
+                                android:textColor="@color/dark" />
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_32"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_stdew"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tedfx56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="33.	Generally, does the water have a taste?"
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_33"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_sdfsdtatusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/texsdf56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="34.	Generally, what does the water look like?"
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_34"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_stasdftusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tex5sdf6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="35.	Do you pay for water?   "
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_35"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textV22cxiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="if YES Water Service Connection No "
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_35"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_statxcvusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/texxcv56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="36.	Are you willing to fixing of water Meters? "
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp3_36"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView_tiwetle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Section III. Wastewater Connections (General)"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_statusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tex56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="37.	Do you have sewerage connection "
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+                            <Spinner
+                                android:id="@+id/sp3_37"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="if YES Is it connected to"
+                                android:textColor="@color/dark" />
+
+                            <RadioGroup
+                                android:id="@+id/rg3_37"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="IC" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="Man hole" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="Connected to storm Water drainage" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textVxcvew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="38.	If it connects to IC/ manhole, Size of the IC/ manhole is "
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_38"
+                                android:maxLines="1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Details for Domestic/ Residential properties"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/texcvw16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Grid No"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/texddtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Connection No"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_connectiono"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xdftView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GIS Plot ID"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_gisid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/texdtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contact No."
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_contactno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtVdfiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GIS Property ID"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_gis_propid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tedfxtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="E-mail"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtdfViegw16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GIS Plot ID Sorted"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_gis_id_sort"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textVdf22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Education"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_educ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtdfView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Property Type"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_prop_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV2df2iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Occupation"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_occup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xfdgtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Property Name"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_prop_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV22idfgew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Annual Income"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_annualincome"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtadView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Property Category"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_prop_cat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textasdV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Family Size"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_family_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5gfxtVujiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ward Name"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_ward_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV2fgh2iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ward No."
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_wardno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5yhxtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="First Name"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV22ikiew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Water Source"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_watersource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tedf5xtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Middle Name"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_midname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textgV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Toilet (Yes/No)"
+                                android:textColor="@color/dark" />
+
+                            <!--<androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_toilet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp3_toilet"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5ffxtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Last Name"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_lname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tefxtV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="UGD connection Yes/No"
+                                android:textColor="@color/dark" />
+
+                           <!-- <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_ugd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />-->
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp3_ugd"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5gfxtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Plot No., Street"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_plotno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textrgV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If YES, is it connects to IC/Manhole/SWD"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_connect_to"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/te5xtView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Location"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_loc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Remarks"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et3_remark"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_back2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Back"
+
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone">
+
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_next2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="step4"
+                    tools:ignore="MissingConstraints"
+                    tools:visibility="visible">
+
+
+                </Button>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

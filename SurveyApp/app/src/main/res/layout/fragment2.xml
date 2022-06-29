@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <ScrollView
+        android:id="@+id/scroll99"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bore well/ hand pump"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp">
+
+                    <TextView
+                        android:id="@+id/te5xtVfiew16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="7.How far (in meters) is the bore well/ hand pump that you use? "
+                        android:textColor="@color/dark" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et2_7"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_edittext"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp">
+
+                    <TextView
+                        android:id="@+id/textV22isdew16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8.How long (in minutes) does it take to fetch water and return home? "
+                        android:textColor="@color/dark" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et2_8"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:background="@drawable/bg_edittext"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_statsusview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/texw56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9.Has the bore well / hand pump broken down in the past one year?"
+                        android:textColor="@color/dark" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_edittext_spinner">
+
+                        <Spinner
+                            android:id="@+id/sp2_9"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent" /></LinearLayout>
+
+                    <!-- <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/tv1_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:background="@drawable/bg_edittext"
+                        android:text="TextView" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="10.How frequently has the bore well/ hand pump the past one year?"
+                    android:textColor="@color/dark" />
+
+                <RadioGroup
+                    android:id="@+id/rg2_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RadioButton
+                        android:id="@+id/radioBtutton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:checked="true"
+                        android:text="Once a week broken down during" />
+
+                    <RadioButton
+                        android:id="@+id/radiyuoButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Once a fortnight" />
+
+                    <RadioButton
+                        android:id="@+id/radioyuButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Once a quarter" />
+
+                    <RadioButton
+                        android:id="@+id/radioetButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Once in six months" />
+
+                    <RadioButton
+                        android:id="@+id/radiouiButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Once a year" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_statdusview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tedfx56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="11.Is the bore well/ hand pump fixed promptly when it breaks down?"
+                        android:textColor="@color/dark" />
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_edittext_spinner">
+
+                        <Spinner
+                            android:id="@+id/sp2_11"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent" /></LinearLayout>
+
+                    <!-- <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/tv1_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:background="@drawable/bg_edittext"
+                        android:text="TextView" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_tiwetgtle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Public tap"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/te5xtView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="12.How far (in meters) is the bore well/ hand pump that you use? "
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_12"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_edittext"
+                            android:maxLines="1"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textrfV22iew16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13.How long (in minutes) does it take to fetch water and return home? "
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_13"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edittext"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/te456x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="14.What is the frequency of water supply?"
+                        android:textColor="@color/dark" />
+
+                    <RadioGroup
+                        android:id="@+id/rg2_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButston5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:text="More than once a day" />
+
+                        <RadioButton
+                            android:id="@+id/radioaButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a day" />
+
+                        <RadioButton
+                            android:id="@+id/raddioButton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once in two days " />
+
+                        <RadioButton
+                            android:id="@+id/radiasdoButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once in three days " />
+
+                        <RadioButton
+                            android:id="@+id/rafdioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a week" />
+
+                        <RadioButton
+                            android:id="@+id/radioBautton11"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Other" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tex7616"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15.Is this frequency sufficient for your needs?"
+                        android:textColor="@color/dark" />
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_edittext_spinner">
+
+                        <Spinner
+                            android:id="@+id/sp2_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" /></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ter6x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="16.How often would you like to get water?"
+                        android:textColor="@color/dark" />
+
+                    <RadioGroup
+                        android:id="@+id/rg2_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radiyjoButton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:text="More than once a day" />
+
+                        <RadioButton
+                            android:id="@+id/radghioButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a day" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton11"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Other" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textyuV22iew16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="17.On the days that you get water, how many hours do you usually get water for?"
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_17"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edittext"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_statuuysview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/texy56"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="18.Has the public tap broken down in the past one year?"
+                            android:textColor="@color/dark" />
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_edittext_spinner">
+
+                            <Spinner
+                                android:id="@+id/sp2_18"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                        <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tex890"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="19.	How frequently has it broken down?"
+                        android:textColor="@color/dark" />
+
+                    <RadioGroup
+                        android:id="@+id/rg2_19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:text="Once a week" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a fortnight" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a quarter" />
+
+                        <RadioButton
+                            android:id="@+id/radyuioButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once in six months" />
+
+                        <RadioButton
+                            android:id="@+id/radyioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a year" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_stattusview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tex5yuu6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="20.	Is the public tap fixed promptly when its breakdown?"
+                            android:textColor="@color/dark" />
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/bg_edittext_spinner">
+
+                            <Spinner
+                                android:id="@+id/sp2_20"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent" /></LinearLayout>
+
+                        <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_ytiwetle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Open well"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_statyusview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textt56"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="21.	How far (in meters) is the open well from which you get water? "
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_21"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edittext"
+                            android:textSize="16sp" />
+
+                        <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textV2r2iew16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="22.	How long (in minutes) does it take to fetch water and return home? "
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_22"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edittext"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_statuyusview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/texe56"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="23.	Who fetches water most often?"
+                            android:textColor="@color/dark" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et2_23"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:background="@drawable/bg_edittext"
+                            android:textSize="16sp" />
+
+                        <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/te4tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="24.	What is the frequency of cleaning the well?"
+                        android:textColor="@color/dark" />
+
+                    <RadioGroup
+                        android:id="@+id/rg2_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radieoBurtton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:text="Once a quarter" />
+
+                        <RadioButton
+                            android:id="@+id/raedioBrutton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once in six months" />
+
+                        <RadioButton
+                            android:id="@+id/raedioButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Once a year" />
+
+                        <RadioButton
+                            android:id="@+id/radioBurtton12"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Not cleaned in the last year" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView_tiwetle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Household water supply (piped)"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tewerx"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="25.	What is the frequency of water supply?"
+                                android:textColor="@color/dark" />
+
+                            <RadioGroup
+                                android:id="@+id/rg2_25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="24-hour supply " />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="More than once a day" />
+
+                                <RadioButton
+                                    android:id="@+id/radwrioButton4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="Once a day" />
+
+                                <RadioButton
+                                    android:id="@+id/radwerioButton2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="Once in two days " />
+
+                                <RadioButton
+                                    android:id="@+id/radiweroButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="Once in three days" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:text="Other" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_statusview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tex56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="26.	Is this frequency sufficient for your needs?    "
+                                android:textColor="@color/dark" />
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/bg_edittext_spinner">
+
+                                <Spinner
+                                    android:id="@+id/sp2_26"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" /></LinearLayout>
+
+                            <!-- <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/tv1_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_edittext"
+                            android:text="TextView" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="27.	How often would you like to get water? "
+                                android:textColor="@color/dark" />
+
+                            <RadioGroup
+                                android:id="@+id/rg2_27"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:id="@+id/radioButwerton4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:checked="true"
+                                    android:text="More than once a day" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:text="Once a day" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:text="Other" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textV22iew16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="28.	On the days that you get water, how many hours do you usually get water for?"
+                                android:textColor="@color/dark" />
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et2_28"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:maxLines="1"
+                                android:background="@drawable/bg_edittext"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_back2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="back"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="gone">
+
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_next2"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Step3"
+                    tools:ignore="MissingConstraints"
+                    tools:visibility="visible">
+
+
+                </Button>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

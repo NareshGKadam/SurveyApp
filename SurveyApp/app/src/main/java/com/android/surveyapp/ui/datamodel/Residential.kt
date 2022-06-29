@@ -1,0 +1,30 @@
+package com.android.surveyapp.ui.datamodel
+
+data class Residential(
+    var R_AnnualIncome: String,
+    var R_ConnectionNo: String,
+    var R_ContactNo: String,
+    var R_Email: String,
+    var R_Education: String,
+    var R_FamilySize: String,
+    var R_FirstName: String,
+    var R_GISPlotID: String,
+    var R_GISPlotIDSorted: String,
+    var R_GISPropertyID: String,
+    var R_GridNo: String,
+    var R_LastName: String,
+    var R_Location: String,
+    var R_MiddleName: String,
+    var R_Occupation: String,
+    var R_PlotNo: String,
+    var R_PropertyCategory: String,
+    var R_PropertyName: String,
+    var R_PropertyType: String,
+    var R_Remarks: String,
+    var R_Toilet: String,
+    var R_UGDconnection: String,
+    var R_WardName: String,
+    var R_WardNo: String,
+    var R_WaterSource: String,
+    var R_connectsto: String
+)

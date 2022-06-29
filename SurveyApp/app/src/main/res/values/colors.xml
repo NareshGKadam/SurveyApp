@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>-->
+
+    <color name="purple_200">#7117DF</color>
+    <color name="purple_500">#5203C3</color>
+    <color name="purple_700">#2E0C7C</color>
+    <color name="teal_200">#2C0671</color>
+
+
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#E31837</color>
+    <color name="primaryBlue">#0077B7</color>
+    <color name="ticketBlue">#87CEEB</color>
+    <color name="dark">#000000</color>
+    <color name="fair">#FFFFFF</color>
+    <color name="baseColor">#E31837</color>
+    <color name="calendarSelection">#1BFC09</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="darkergray">#7E7B7B</color>
+    <color name="placeGreen">#57ad24</color>
+    <color name="enableGreen">#57ad24</color>
+    <color name="disableGreen">#243A22</color>
+    <color name="enableRed">#E91028</color>
+    <color name="disableRed">#381B1F</color>
+    <color name="enableBlue">#2A55D1</color>
+    <color name="disableBlue">#262E47</color>
+    <color name="brown">#8F2A22</color>
+    <color name="blueArrow">#1660AA</color>
+
+
+</resources>
