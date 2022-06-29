@@ -33,11 +33,11 @@ class MainActivity : AppCompatActivity() {
             val date1: Date =Date()
             val expdate2: Date = sdf.parse("2022-05-30")
             if(date1.before(expdate2)){
-                Log.e("app", "currnet Date1 is before expdate2")  // not expired
+               // Log.e("app", "currnet Date1 is before expdate2")  // not expired
             }
 
             if(date1.after(expdate2)){
-                Log.e("app", "current Date1 is after expdate2")   //  expired
+               // Log.e("app", "current Date1 is after expdate2")   //  expired
                /* val builder = AlertDialog.Builder(this)
                 builder.setTitle("Build info")
                 builder.setMessage("SurveyApp test version expired")
