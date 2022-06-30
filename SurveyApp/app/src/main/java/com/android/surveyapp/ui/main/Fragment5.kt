@@ -139,7 +139,7 @@ class Fragment5 : Fragment() {
                 ""+mPage3_Resident?.R_AnnualIncome,""+mPage3_Resident?.R_ConnectionNo,""+mPage3_Resident?.R_ContactNo,""+mPage3_Resident?.R_Education,""+mPage3_Resident?.R_Email,""+mPage3_Resident?.R_FamilySize,""+mPage3_Resident?.R_FirstName,""+mPage3_Resident?.R_GISPlotID,""+mPage3_Resident?.R_GISPlotIDSorted,""+mPage3_Resident?.R_GISPropertyID,""+mPage3_Resident?.R_GridNo,""+mPage3_Resident?.R_LastName,""+mPage3_Resident?.R_Location,""+mPage3_Resident?.R_MiddleName,""+mPage3_Resident?.R_Occupation,""+mPage3_Resident?.R_PlotNo,""+mPage3_Resident?.R_PropertyCategory,""+mPage3_Resident?.R_PropertyName,""+mPage3_Resident?.R_PropertyType,""+mPage3_Resident?.R_Remarks,""+mPage3_Resident?.R_Toilet,""+mPage3_Resident?.R_UGDconnection,""+mPage3_Resident?.R_WardName,""+mPage3_Resident?.R_WardNo,""+mPage3_Resident?.R_WaterSource,""+mPage3_Resident?.R_connectsto,
                 ""+mPage2_Section?.q1,""+mPage2_Section?.q10,""+mPage2_Section?.q11,""+mPage2_Section?.q12,""+mPage2_Section?.q13,""+mPage2_Section?.q14,""+mPage2_Section?.q15,""+mPage2_Section?.q16,""+mPage2_Section?.q17,""+mPage2_Section?.q18,""+mPage2_Section?.q19,""+mPage2_Section?.q2,""+mPage2_Section?.q20,""+mPage2_Section?.q21,""+mPage2_Section?.q22,""+mPage2_Section?.q23,""+mPage2_Section?.q24,""+mPage2_Section?.q25,""+mPage2_Section?.q26,""+mPage2_Section?.q27,""+mPage2_Section?.q28,""+mPage2_Section?.q29,"",""+mPage2_Section?.q30,""+mPage2_Section?.q31,""+mPage2_Section?.q32,""+mPage2_Section?.q33,""+mPage2_Section?.q34,""+mPage2_Section?.q35,
                 ""+mPage2_Section?.q35a,""+mPage2_Section?.q36,""+mPage2_Section?.q37,""+mPage2_Section?.q37a,""+mPage2_Section?.q38,""+mPage2_Section?.q3a,""+mPage2_Section?.q3b,""+mPage2_Section?.q3c,""+mPage2_Section?.q3d,""+mPage2_Section?.q4,""+mPage2_Section?.q5,""+mPage2_Section?.q6,""+mPage2_Section?.q7,""+mPage2_Section?.q8,""+mPage2_Section?.q9,
-            ""+imageData)
+            ""+imageData,""+mPage1_Common?.grid_no)
             Log.i("jobj--->>", "" + sformAll)
             /*  val jobj: SurveyDataForm = SurveyDataForm(
                   mApartments!!, mCommercial!!,
@@ -272,7 +272,7 @@ class Fragment5 : Fragment() {
             val byteArray: ByteArray = byteArrayOutputStream.toByteArray()
 
             val encoded: String = Base64.encodeToString(byteArray, Base64.DEFAULT)
-            imageData="data:image/png;base64,"+encoded
+            imageData=""+encoded
 //            imageData="data:image/png;base64,"+encoded
             imageView1?.setImageBitmap(imageBitmap)
 

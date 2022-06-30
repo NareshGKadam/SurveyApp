@@ -11,6 +11,6 @@ data class Commondata(
     var PropertyType: String?,
     var StartingTime: String?,
     var WARDNO: String?,
-    var GridNo: String?
+    var grid_no: String?
 
 )
