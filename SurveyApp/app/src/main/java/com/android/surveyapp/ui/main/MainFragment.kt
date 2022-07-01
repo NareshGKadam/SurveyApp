@@ -110,7 +110,7 @@ class MainFragment : Fragment() {
         sp1_q3d.adapter = adapter
         sp1_status.adapter = adapter2
 
-        var investigator = arrayOf("Select",
+        var investigator = arrayOf("Select Investigator",
             "Mohammed Owais",
             "Mohammed Faisal",
             "D.Uma Maheshwar",

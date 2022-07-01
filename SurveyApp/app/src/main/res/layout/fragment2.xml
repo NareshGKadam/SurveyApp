@@ -1058,9 +1058,8 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="3dp"
-                            android:layout_weight="1">
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="3dp">
 
                             <TextView
                                 android:id="@+id/textV22iew16"
@@ -1075,8 +1074,8 @@
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:maxLines="1"
                                 android:background="@drawable/bg_edittext"
+                                android:maxLines="1"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
